@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Main Page
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div id="container">
+    <ion-grid>
+      <ion-row>
+          <ion-list>
+            <ion-item *ngFor="let item of pictureList">
+              <ion-img [src]="item" (click)="tapImage(item)"></ion-img>
+            </ion-item>
+          </ion-list>
+      </ion-row>
+  </ion-grid>
+  </div>
+</ion-content>
